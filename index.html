@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Course Planner</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+
+            <div class="columns">
+                <div class="column">
+                    <div class="level">
+                        <div class="level-left">
+                            <div class="level-item">
+                                <p>Points required: 30 </p>
+                            </div>
+                            <div class="level-item">
+                                <span id="points" class="tag is-danger">Fail</span>
+                            </div>
+                            <div class="level-item">
+                                <p>1 module per semester </p>
+                            </div>
+                            <div class="level-item">
+                                <span id="semester" class="tag is-danger">Fail</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-one-third">
+                    <h1 class="title has-text-centered	">Semester 1</h1>
+                    <div class="card" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-content" data-card-type="semester">
+                        </div>
+                    </div>
+                    <div class="card" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-content" data-card-type="semester">
+                        </div>
+                    </div>
+                    <div class="card" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-content" data-card-type="semester">
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third">
+                    <h1 class="title has-text-centered">Semester 2</h1>
+                    <div class="card" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-content" data-card-type="semester">
+                        </div>
+                    </div>
+                    <div class="card" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-content" data-card-type="semester">
+                        </div>
+                    </div>
+                    <div class="card" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-content" data-card-type="semester">
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third">
+                    <h1 class="title has-text-centered	">Semester 3</h1>
+                    <div class="card" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-content" data-card-type="semester">
+                        </div>
+                    </div>
+                    <div class="card" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-content" data-card-type="semester">
+                        </div>
+                    </div>
+                    <div class="card" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-content" data-card-type="semester">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <h1 class="title has-text-centered	">Available Modules</h1>
+                    <div class="card" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-content" data-card-type="module">
+                            <p id="drag1" draggable="true" ondragstart="drag(event)">Module</p>
+                        </div>
+                    </div>
+                    <div class="card" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-content" data-card-type="module">
+                            <p id="drag2" draggable="true" ondragstart="drag(event)">Module</p>
+                        </div>
+                    </div>
+                    <div class="card" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-content" data-card-type="module">
+                            <p id="drag3" draggable="true" ondragstart="drag(event)">Module</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="/scripts/main.js"></script>
+</body>
+
+</html>
