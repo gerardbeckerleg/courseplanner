@@ -9,33 +9,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 </head>
-
 <body>
     <section class="section">
         <div class="container">
-
             <div class="columns">
                 <div class="column">
-                        <form name="myForm">
-                    <div class="control level-item">
-                        <label class="radio">
-                            <input type="radio" name="studenttype" value="domestic" checked> Domestic
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="studenttype" value="international"> International
-                        </label>
-                    </div>
-                        </form>
+                    <form name="myForm">
+                        <div class="control level-item">
+                            <label class="radio">
+                                <input type="radio" name="studenttype" value="domestic" checked> Domestic
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="studenttype" value="international"> International
+                            </label>
+                        </div>
+                    </form>
                 </div>
             </div>
-
             <div class="columns">
                 <div class="column is-one-third is-offset-one-third">
                     <div class="level">
                         <div class="level-left">
                             <div class="level-item">
                                 <p>Points required:
-                                        <span id="actualpoints"></span>/<span id="points"></span>
+                                    <span id="actualpoints"></span>/
+                                    <span id="points"></span>
                                 </p>
                             </div>
                             <div class="level-item">
